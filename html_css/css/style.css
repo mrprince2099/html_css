@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+:root {
+    --corprincipal: #14f2faf1;
+    --corsecundaria: #ffa500;
+    --cordestaque: #ffff00;
+    --textprincipal: #a52a2a92;
+    --textsecundario: #212121;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to top,var(--corprincipal),var(--cordestaque));
+    background-position: top;
+    background-repeat: ;
+
+}
