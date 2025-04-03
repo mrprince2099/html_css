@@ -1,0 +1,263 @@
+@charset "utf-8"
+
+
+/* Criando um mobile-first
+https://paletadecores.com/paleta/21203f/fff1ce/e7bfa5/c5a898/4b3c5d/
+https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp
+    device breakpoints
+     mobile 600 px 
+     tablet 768 px
+     desktop 992 px
+     smart_tv 1200 px
+
+*/
+
+:root {
+    --maincolor: #27970b;
+    --segundcolor: #9532a8;
+    --botaocolor: #71EADF;
+    --botaocolor2: #E4EA40;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, #9532a8, #27970b);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+
+}
+
+header {
+    background-color: ;
+    margin-top: 3px;
+    border-radius: 7px 7px 0px 0px;
+    width: 90vw;
+    margin: auto;
+}
+
+header>h1 {
+    text-align: center;
+    color: #27970b;
+    padding: 3px;
+    text-shadow: #27970b;
+    margin-top: 17px;
+}
+
+#burger {
+    background-color: #27970b;
+    display: block;
+    color: #9532a8;
+    text-align: center;
+    margin: auto;
+    padding: 7px;
+    width: 90vw;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url("../back-tablet.jpg");
+
+    }
+
+    #burger {
+        background-color: var(#27970b);
+        display: block;
+        color: var(#9532a8);
+        text-align: center;
+        margin: auto;
+        padding: 7px;
+        width: 90vw;
+        cursor: pointer;
+    }
+
+    #burger:hover {
+        background-color: var(--segundcolor);
+    }
+
+    menu {
+        display: block;
+        width: 90vw;
+        margin: auto;
+        background-color: #21203f;
+    }
+
+    menu>ul>li {
+        display: inline-block;
+        background-color: #21203f;
+
+    }
+
+    main {
+        width: 90vw;
+        margin: auto;
+    }
+
+    article>h2 {
+        padding-bottom: 17px;
+        width: 90vw;
+        margin: auto;
+    }
+
+    article>p {
+        text-align: justify;
+        margin-bottom: 17px;
+        text-indent: 17px;
+    }
+
+    footer {
+        width: 90vw;
+        margin: auto;
+    }
+
+    img#mobile {
+        display: none;
+    }
+
+    img#tablet {
+        display: block;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    body {
+        background-image: url("../back-pc.jpg");
+    }
+
+    #burger {
+        display: none;
+    }
+
+    menu {
+        display: block;
+        background-color: #21203f;
+    }
+
+    menu>ul>li {
+        display: inline-block;
+        background-color: #21203f;
+    }
+
+    main {
+        width: 90vw;
+        margin: auto;
+    }
+
+    article>h2 {
+        padding-bottom: 17px;
+    }
+
+    article>p {
+        text-align: justify;
+        margin-bottom: 17px;
+        text-indent: 17px;
+    }
+
+    footer {
+        width: 90vw;
+        margin: auto;
+    }
+
+    img#mobile {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: block;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    body {
+        background-image: url("../back-tv.jpg");
+        background-repeat: repeat-x;
+        background-attachment: fixed;
+    }
+
+    #burger {
+        display: none;
+    }
+
+    menu {
+        display: block;
+        background-color: #21203f;
+    }
+
+    menu>ul>li {
+        display: inline-block;
+        background-color: #21203f;
+    }
+
+    main {
+        width: 90vw;
+        margin: auto;
+    }
+
+    article>h2 {
+        padding-bottom: 17px;
+    }
+
+    article>p {
+        text-align: justify;
+        margin-bottom: 17px;
+        text-indent: 17px;
+    }
+
+    footer {
+        width: 90vw;
+        margin: auto;
+    }
+
+    img#mobile {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: block;
+    }
+}
